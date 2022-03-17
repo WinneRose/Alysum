@@ -18,7 +18,7 @@
           </a>
           <div
             class="fixed top-0 left-0 z-40 items-center w-full h-full p-3 text-xl bg-gray-900 bg-opacity-50 md:text-sm lg:text-base md:w-3/4 md:bg-transparent md:p-0 md:relative md:flex"
-            v-if="showMenu === true"
+            v-if="showMenu == false"
           >
             <div
               class="flex-col w-full h-[70vh] bg-white rounded-lg select-none md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto"
@@ -125,7 +125,7 @@
 export default {
   data() {
     return {
-      showMenu: true,
+      showMenu: false,
     }
   },
   methods: {

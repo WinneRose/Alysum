@@ -25,33 +25,24 @@
             <!-- Member #1 -->
             <div
               class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4"
-              v-for="profile in profileurl"
-              :key="profile"
+              v-for="profiles in profile"
+              :key="profiles"
             >
               <div class="flex flex-col">
                 <!-- Avatar -->
                 <a href="#" class="mx-auto">
                   <img
                     class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                    :src="profile"
+                    :src="profiles.img"
                   />
                 </a>
 
                 <!-- Details -->
-                <div
-                  class="text-center mt-6"
-                  v-for="names in name"
-                  :key="names"
-                >
+                <div class="text-center mt-6">
                   <!-- Name -->
                   <h1 class="text-gray-200 text-xl font-bold mb-1">
-                    {{ names }}
+                    {{ profiles.name }}
                   </h1>
-
-                  <!-- Title -->
-                  <div class="text-gray-400 font-light mb-2">
-                    Founder & Specialist
-                  </div>
                 </div>
               </div>
             </div>
@@ -66,8 +57,7 @@
 export default {
   data() {
     return {
-      profileurl: [],
-      name: [],
+      profile: [],
     }
   },
 
@@ -76,15 +66,17 @@ export default {
       userId: ['701896585604497490', '162969778699501569'],
     })
     //cdn.discordapp.com/avatars/701896585604497490/${status.discord_user.avatar}.png?size=256
-    https: for (let i = 0; i < data.length; i++) {
-      this.profileurl.push(
-        'https://cdn.discordapp.com/avatars/' +
+    for (let i = 0; i < data.length; i++) {
+      this.profile.push({
+        img:
+          'https://cdn.discordapp.com/avatars/' +
           `${data[i].data.discord_user.id}/` +
           data[i].data.discord_user.avatar +
-          '.png?size=256'
-      )
-      this.name.push(data[i].data.discord_user.username)
-      console.log(data[i].data.discord_user.username)
+          '.png?size=256',
+        name: data[i].data.discord_user.username,
+      })
+
+      console.log(this.profile)
     }
   },
 }
