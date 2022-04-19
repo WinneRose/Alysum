@@ -16,7 +16,7 @@
         <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div class="w-full lg:w-1/2 px-4 py-2">
             <details class="mb-4">
-              <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+              <summary class="font-semibold mBg rounded-md py-2 px-4">
                 How Long is this site live?
               </summary>
 
@@ -27,7 +27,7 @@
               </span>
             </details>
             <details class="mb-4">
-              <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+              <summary class="font-semibold mBg rounded-md py-2 px-4">
                 Can I install/upload anything I want on there?
               </summary>
 
@@ -38,7 +38,7 @@
               </span>
             </details>
             <details class="mb-4">
-              <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+              <summary class="font-semibold mBg rounded-md py-2 px-4">
                 How can I migrate to another site?
               </summary>
 
@@ -51,7 +51,7 @@
           </div>
           <div class="w-full lg:w-1/2 px-4 py-2">
             <details class="mb-4">
-              <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+              <summary class="font-semibold mBg rounded-md py-2 px-4">
                 Can I change the domain you give me?
               </summary>
 
@@ -62,7 +62,7 @@
               </span>
             </details>
             <details class="mb-4">
-              <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+              <summary class="font-semibold mBg rounded-md py-2 px-4">
                 How many sites I can create at once?
               </summary>
 
@@ -73,7 +73,7 @@
               </span>
             </details>
             <details class="mb-4">
-              <summary class="font-semibold bg-gray-200 rounded-md py-2 px-4">
+              <summary class="font-semibold mBg rounded-md py-2 px-4">
                 How can I communicate with you?
               </summary>
 
@@ -97,6 +97,11 @@ export default {}
 <style>
 .headeranim {
   -webkit-animation: colorchange 20s infinite alternate;
+}
+
+.mBg {
+  background-color: rgba(63, 71, 82, 0.692);
+  color: whitesmoke;
 }
 
 @-webkit-keyframes colorchange {

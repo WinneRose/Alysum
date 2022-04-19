@@ -63,7 +63,11 @@ export default {
 
   async mounted() {
     const data = await this.$lanyard({
-      userId: ['701896585604497490', '812033666875916300', '871469282557566977'],
+      userId: [
+        '701896585604497490',
+        '812033666875916300',
+        '871469282557566977',
+      ],
     })
     //cdn.discordapp.com/avatars/701896585604497490/${status.discord_user.avatar}.png?size=256
     for (let i = 0; i < data.length; i++) {

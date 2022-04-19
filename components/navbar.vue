@@ -32,12 +32,12 @@
                   >Home</a
                 >
                 <a
-                  href="#"
+                  href="#about"
                   class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-gray-900 md:hover:text-white lg:mx-3 md:text-center"
                   >About Us</a
                 >
                 <a
-                  href="#"
+                  href="#roadmap"
                   class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left md:px-0 hover:text-gray-900 md:hover:text-white lg:mx-3 md:text-center"
                   >Roadmap</a
                 >
@@ -97,10 +97,10 @@
         <h1
           class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl xl:text-4xl"
         >
-          <span class="block">Join our Game Development Journal</span>
+          <span class="block">Join our Game Development Diary</span>
           <span
             class="relative inline-block mt-3 text-transparent text-white headeranim"
-            >Project: A.l.y.s.u.m</span
+            >Project: A.L.Y.S.U.M</span
           >
         </h1>
         <div
